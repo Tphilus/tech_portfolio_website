@@ -295,3 +295,98 @@
     height: 80%;
     width: 80%;
 }
+
+ /* moblie Responsive */
+
+ @media screen and (max-width: 768px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        margin: 0 auto;
+        height: 109vh;
+    }
+
+    .main__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .main__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .main__container h2 {
+        font-size: 3rem;
+    }
+
+    .main__content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+ }
+
+ @media screen and (max-width: 480px) {
+    
+    .main__content h1 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .main__container h2 {
+        font-size: 2rem;
+    }
+
+    .main__content p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .main__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+ }
+
+ /* service section */
+
+ .services {
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+ }
+
+ .services h1 {
+    background-color: #FF8177;
+    background-image: linear-gradient(to right, #ff0844 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%,
+     #cf556c 78%, #b12a5b 100%);
+     background-size: 100%;
+     margin-bottom: 5rem;
+     font-size: 2.5rem;
+     -webkit-background-clip: text;
+     -moz-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -moz-text-fill-color: transparent;
+ }
+
+ .services__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+
+ .services__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/pic3.jpg');
+    position: relative;
+    background-size: cover;
+    color: #fff;
+ }
